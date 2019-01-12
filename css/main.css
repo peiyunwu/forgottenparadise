@@ -1,0 +1,184 @@
+/* CSS Document */
+
+@import url("rwd.css");
+@import url("parallax.css");
+@import url("swiper.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	font-family: Verdana, Geneva, sans-serif, "微軟正黑體";
+	color: #666;
+}
+
+h1, h2, h3, h4, h5, h6{
+	display: block;
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing: 1.5px;
+}
+
+p{
+	display: block;
+	line-height: 1.5em;
+}
+
+span{
+	display: block;
+}
+
+::selection{
+	background-color: #EEE;
+}
+
+br{
+	display: none;
+}
+
+/* header */
+
+header{
+	padding: 15px 0px;
+	background: #fff;
+	text-align: left;
+	position: relative;
+	padding: 15px 20px;
+}
+
+header a{
+	color: #666;
+	text-decoration: none;
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing: 1.5px;
+}
+
+.menu{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background:url(../images/menu.png);
+	right: 15px;
+	top: 20px;
+	background-repeat: no-repeat;
+}
+
+.menu:hover{
+	cursor: pointer;
+}
+
+/* nav */
+
+nav{
+	background: #fff;
+	display: none;
+}
+
+nav ul{
+	font-family: 'Noto Serif TC', serif;
+	letter-spacing: 1.5px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+}
+
+.home{
+	position: absolute;
+	padding: 15px 20px;
+	left: 0;
+	display: none;
+	color: #666;
+	text-decoration: none;
+}
+
+nav ul li{
+	display: block;
+	border-bottom: solid #fff 1px;
+}
+
+nav ul li a{
+	box-sizing: border-box;
+	display: inline-block;
+	color: #666;
+	text-decoration: none;
+	/*width: 100%;*/
+	padding: 5px 20px;
+	margin: 5px 0; 
+	border: 3px solid #fff;
+	border-radius: 100px;
+}
+
+nav ul li a:hover{
+	background: #5576FF;
+	border: 3px solid #5576FF;
+	color: #fffff3;
+}
+
+.list{
+	border: 3px solid #5576FF;
+	border-radius: 100px;
+	background-color: #5576FF;
+	color: #fff;
+}
+
+/*swiper*/
+
+.all img{
+	width: 100%;
+}
+
+/* footer */
+
+footer{
+	text-align: right;
+	padding: 20px;
+	border-top: 1px solid #ddd;
+	font-size: 0.9em;
+}
+
+/*for tablets*/
+
+@media only screen and (min-width: 768px){
+	br{
+		display: block;
+	}
+	nav, .home{
+		display: block;
+	}
+	nav ul{
+		text-align: right;
+	}
+	nav ul li{
+		display: inline-block;
+		border-bottom: hidden;
+		margin: 0 5px;
+	}
+	header{
+		display: none;
+	}
+	.coll{
+		padding: 15px 0;
+	}
+	nav ul li:last-child {
+		margin-right: 20px;
+	}
+	.con1{
+		text-align: center;
+	}
+}
+
+/*for desktop*/
+
+@media only screen and (min-width: 1200px){
+	.row, .all{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.shorttext{
+		width: 600px;
+	}
+}
