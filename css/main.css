@@ -10,6 +10,10 @@
 	box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 html, body{
 	font-family: Verdana, Geneva, sans-serif, "微軟正黑體";
 	color: #666;
@@ -34,7 +38,7 @@ span{
 	background-color: #EEE;
 }
 
-br{
+.row p br{
 	display: none;
 }
 
@@ -62,7 +66,7 @@ header a{
 	height: 30px;
 	background:url(../images/menu.png);
 	right: 15px;
-	top: 20px;
+	top: 25px;
 	background-repeat: no-repeat;
 }
 
@@ -95,6 +99,10 @@ nav ul{
 	text-decoration: none;
 }
 
+.home:hover{
+	color: #5576FF;
+}
+
 nav ul li{
 	display: block;
 	border-bottom: solid #fff 1px;
@@ -108,21 +116,48 @@ nav ul li a{
 	/*width: 100%;*/
 	padding: 5px 20px;
 	margin: 5px 0; 
-	border: 3px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 100px;
 }
 
 nav ul li a:hover{
 	background: #5576FF;
-	border: 3px solid #5576FF;
+	border: 2px solid #5576FF;
 	color: #fffff3;
 }
 
 .list{
-	border: 3px solid #5576FF;
+	border: 2px solid #5576FF;
 	border-radius: 100px;
 	background-color: #5576FF;
 	color: #fff;
+}
+
+/*to top*/
+
+#topbut{
+  display: none;
+  position: fixed;
+  font-size: 18px;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  outline: none;
+  background-color: #5576FF;
+  border: 2px solid #5576FF;
+  color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 20px -4px #999999;
+  -moz-box-shadow: 0px 7px 20px -4px #999999;
+  box-shadow: 0px 7px 20px -4px #999999;
+}
+
+#topbut:hover{
+  background-color: #666;
+  border: 2px solid #666;
 }
 
 /*swiper*/
@@ -134,7 +169,7 @@ nav ul li a:hover{
 /* footer */
 
 footer{
-	text-align: right;
+	text-align: center;
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	font-size: 0.9em;
@@ -143,7 +178,7 @@ footer{
 /*for tablets*/
 
 @media only screen and (min-width: 768px){
-	br{
+	.row p br{
 		display: block;
 	}
 	nav, .home{
@@ -169,6 +204,12 @@ footer{
 	.con1{
 		text-align: center;
 	}
+	.parallax-window h1{
+		font-size: 3em;
+	}
+	section{
+		padding: 100px 0 70px 0;
+	}
 }
 
 /*for desktop*/
@@ -179,6 +220,9 @@ footer{
 		margin: 0 auto;
 	}
 	.shorttext{
-		width: 600px;
+		width: 700px;
+	}
+	.pr{
+		padding-right: 80px;
 	}
 }

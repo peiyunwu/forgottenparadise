@@ -1,7 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
 
-	$("header").load("header.html");
 	$("footer").load("footer.html");
 
 	$(window).resize(function(){
@@ -12,23 +11,20 @@ $(document).ready(function(){
 		$("nav").slideToggle();
 	});
 
-	//group
-
-	$(".fancybox").fancybox({
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
-
-	//single
-	$("#s2").fancybox({
-        openEffect	: 'elastic', //彈出
-    	closeEffect	: 'elastic',
-
-    	helpers : {
-    		title : {
-    			type : 'inside'
-    		}
-    	}
-    });
-
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topbut").style.display = "block";
+  } else {
+    document.getElementById("topbut").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
