@@ -1,8 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
 
-	$("footer").load("footer.html");
-
 	$(window).resize(function(){
 		location.reload();
 	});
