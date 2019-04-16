@@ -29,7 +29,7 @@ html, body{
 	--color-link: #000;
 	/*--color-link-hover: #f20c40;*/
 	--color-bg-item1: #EEE;
-	--color-highlight: #FFDA77;
+	--color-highlight: #b2d6f0;
 
 	/*
 	--color-bg: #252525;
@@ -281,7 +281,7 @@ b {
 }
 
 b::before {
-	background-color: #FFDA77;
+	background-color: var(--color-highlight);
 	content: "";
 	position: absolute;
 	width: calc(100% + 20px);

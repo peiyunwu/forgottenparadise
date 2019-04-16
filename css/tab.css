@@ -70,8 +70,8 @@ label {
 
 .tab_container [id^="tab"]:checked + label {
   background: #fff;
-  color: #FBC233;
-  box-shadow: inset 0 3px #FBC233;
+  color: #61A9DF;
+  box-shadow: inset 0 3px #61A9DF;
 }
 
 /*Media query*/
