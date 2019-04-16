@@ -2,129 +2,123 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>關於我們</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>關於我們 - 被遺忘的樂園</title>
 	<!-- icon -->
-	<link rel="icon" href="images/logo.ico" type="image/x-icon" />
-  	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+  	<link rel="shortcut icon" href="images/logo.ico">
 	<!-- css -->
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- js -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax/parallax.js"></script>
-    <script type="text/javascript" src="js/swiper/swiper.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
-
-	<div id="top"></div>
-
-	<header>
-		<a href="index.html">被遺忘的樂園</a>
-		<div class="menu"></div>
+	<header id="head">
+	    <nav id="main-navigation" class="navigation">
+	        <a href="index.html" class="logo">
+	            <img src="images/logotext.png" alt="">
+	        </a>
+	        <div class="hamburger-menu">
+	            <div class="hamburger"></div>
+	        </div>
+	        <div class="menu-container">
+	            <ul class="menu">
+	                <li class="menu-link"><a class="link" href="index.html">首頁</a></li>
+	                <li class="menu-link"><a class="link" href="issue.html">遊戲理念</a></li>
+	                <li class="menu-link"><a class="link" href="faq.html">海塑小知識</a></li>
+	                <li class="menu-link"><a class="link" href="download.html">遊戲下載</a></li>
+	                <!-- <li class="menu-link">
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reprehenderit, recusandae blanditiis dolores quis quisquam beatae necessitatibus facere, quae a.</p>
+	                </li> -->
+	                <li class="menu-link menu-line"></li>
+	                <li class="menu-link"><a class="link" href="about.html">關於我們</a></li>
+	            </ul>
+	            <!-- <div class="menu-info">
+	                <p>forgottenparadise@gmail.com</p>
+	            </div> -->
+	        </div>
+	    </nav>
 	</header>
-    
-    <nav>
-    	<div class="row">
-	    <div class="coll">
-		    <ul>
-		        <a href="index.html"><div class="home">被遺忘的樂園</div></a>
-		        <li><a href="index.html">遊戲介紹</a></li>
-		        <li><a href="issue.html">遊戲理念</a></li>
-		        <li><a href="about.html" class="list">關於我們</a></li>
-			       <li><a href="download.html">遊戲下載</a></li>
-		    </ul>
+		
+	<div class="bg">
+		<div class="conbg row">
+			<div class="col-6">
+				<h1 class="title">關於我們</h1>
+			</div>
+			<div class="col-6">
+				<img src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+			</div>
 		</div>
-		</div>
-    </nav>
-
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/about.jpg">
-    	<div class="row">
-    		<div class="col-12">
-	    		<h1>關於我們<br><small>＝往下滑動看更多＝</small></h1>
-	    	</div>
-	    </div>
 	</div>
 
-	<button onclick="topFunction()" id="topbut" title="Go to top">↑</button>
+	<p class="scrolltext">SCROLL</p>
+	<span class="scroll"></span>
+
+	<!-- <div class="middle">
+	    <a href="#main">
+	    	<img src="images/arrow.png" alt="arrow" class="down">
+	    </a>
+	</div> -->
+
+	<main id="main">
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="subt centert"><b>為什麼做這款遊戲？</b></div>
+				<div class="ranget">
+					<p class="para">不知道螢幕前的各位是否跟我們一樣，因為龐大的資訊量及各種生硬的資料，而無法全盤吸收自己感興趣的議題，甚至常觀看到一半就去找周公泡茶？有鑑於此，我們的作品決定要走不一樣的路線。</p>
+					<p class="para">在選定做海洋環境相關的題目後，我們針對多個不同的汙染源進行討論，最後以海洋塑膠汙染為作品主軸，因為此議題近年來備受各國重視，同時也與我們的生活息息相關。</p>
+					<p class="para">但正如前面所提到的，此議題不但艱深且涵蓋範圍也相當寬廣，一般民眾可能較難以吸收，所以我們跳脫傳統媒材的框架，以遊戲與網站的形式講述此議題。希望以嶄新的方式喚起更多人對海洋環境保護的認知，並傳達海廢議題的重要性、知識與現況。</p>
+					<div class="pos mb100">
+						<div class="square4 abs"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="con1 row">
+			<div class="col-12">
+				<div class="subt centert"><b>成員介紹</b></div>
+			</div>
+		</div>
+		<div class="con1 row">
+			<div class="col-8">
+				<img src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+			</div>
+			<div class="col-4">
+				<div class="subt">吳佩芸</div>
+				<p class="para">遊戲工程和網站架設。從零開始學習Unity引擎，享受遊戲製作過程中的各種未知，期待用Unity帶給大家一點意義並創造價值。</p>
+				<p class="para">↑原本是這麼想，但開始後的過程宛如水深火熱，就像是在暴風圈中載浮載沉小舟，希望能夠持續燃燒自我。</p>
+			</div>
+		</div>
+		<div class="con1 row">
+			<div class="col-4">
+				<div class="subt">戴淨妍</div>
+				<p class="para">遊戲美術以及訪問。想像力或許是人類的超能力，但它建立在知識的基礎上，所以提筆畫畫前，我會先<span class="delete">滑手機</span>看書。包辦從標題到場景等美術的設計，每次花了好幾天的成品總是被打槍，所以從初稿到完稿的過程是一條看似沒有盡頭的路。</p>
+			</div>
+			<div class="col-8">
+				<img src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+			</div>
+		</div>
+		<div class="con1 row">
+			<div class="col-8">
+				<img src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+			</div>
+			<div class="col-4">
+				<div class="subt">黃昱晉</div>
+				<p class="para">負責訪問、遊戲機制、分鏡及劇本編寫。愛打game的宅宅，轉眼間發現已經是大四生。一開始決定要製作遊戲時感到很有趣，但開始後才發現「做」跟「玩」完全是兩碼子事。希望能夠多少利用以前的經驗，讓自己在團隊中看起來不那麼醬油。</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>© Copyright 2019 被遺忘的樂園. All Rights Reserved.</p>
+	</footer>
 	
-	<section>
-		<div class="row">
-		<div class="col-12 con1">
-			<div class="st"><span>緣起</span></div>
-			<h3 class="sub">為什麼做這款遊戲？</h3>
-			<p>為了讓更多人提升海洋環境保護的認知，<br>我們藉由遊戲製作及網站架設，傳達海廢議題的重要性，<br>及海廢汙染的知識與現況。為了讓更多人提升海洋環境保護的認知，<br>我們透過遊戲及網站傳達海廢議題的相關知識。</p>
-		</div>
-		</div>
-	</section>
-
-	<div class="wave">
-		<div id="container">
-			<svg x="0px" y="0px" viewBox="0 0 3841 108.5" style="overflow:scroll;enable-background:new 0 0 3841 108.5;" xml:space="preserve">
-			<path style="fill:#fffff3; stroke-miterlimit:10;" d="M3360.5,97.739c-242,0-480-48.375-480-48.375S2647.5,0.5,2400.5,0.5s-480,48.375-480,48.375s-238,48.864-480,48.864s-480-48.375-480-48.375S727.5,0.5,480.5,0.5S0.5,48.875,0.5,48.875V108h1920h1920V48.875C3840.5,48.875,3602.5,97.739,3360.5,97.739z"/>
-			</svg>
-		</div>
-	</div>
-
-	<section class="yellow">
-		<div class="row">
-			<div class="col-12 con1">
-				<div class="st"><span>團隊</span></div>
-				<h3 class="sub">成員介紹</h3>
-			</div>
-			<div class="col-4 col-m-4">
-				<div class="graph">
-					<img src="images/yun.png"><br>
-					<!-- <small>01</small> -->
-					<h4>吳佩芸</h4>
-					<p>Unity實作、架設遊戲網站</p>
-				</div>
-			</div>
-			<div class="col-4 col-m-4">
-				<div class="graph">
-					<img src="images/jang.png"><br>
-					<!-- <small>02</small> -->
-					<h4>戴淨妍</h4>
-					<p>美術設計</p>
-				</div>
-			</div>
-			<div class="col-4 col-m-4">
-				<div class="graph">
-					<img src="images/jim.png"><br>
-					<!-- <small>03</small> -->
-					<h4>黃昱晉</h4>
-					<p>遊戲腳本、網站內容規劃</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="wave wave2">
-		<div id="container">
-			<svg x="0px" y="0px" viewBox="0 0 3841 108.5" style="overflow:scroll;enable-background:new 0 0 3841 108.5;" xml:space="preserve">
-			<path style="fill:#fff; stroke-miterlimit:10;" d="M3360.5,97.739c-242,0-480-48.375-480-48.375S2647.5,0.5,2400.5,0.5s-480,48.375-480,48.375s-238,48.864-480,48.864s-480-48.375-480-48.375S727.5,0.5,480.5,0.5S0.5,48.875,0.5,48.875V108h1920h1920V48.875C3840.5,48.875,3602.5,97.739,3360.5,97.739z"/>
-			</svg>
-		</div>
-	</div>
-
-	<section>
-		<div class="row pb">
-		<div class="col-12 con1">
-			<div class="st"><span>聯絡</span></div>
-			<h3 class="sub">粉絲專頁</h3>
-			<p>產生沒有意義的文字組合文字組合，<br>供排版時填充版面用，但不會因為字義而左右版型的判斷。<br>產生沒有意義的文字組合文字組合，供排版時填充版面用，<br>但不會因為字義而左右版型的判斷。產生沒有意義的文字組合文字組合，<br>供排版時填充版面用，但不會因為字義而左右版型的判斷。</p>
-			<!-- <a href="#"> -->
-				<div class="more active">暫未開放</div>
-			<!-- </a> -->
-		</div>
-		</div>
-	</section>
-
-    <footer>
-    	<div class="row">
-		    <p>&copy; Copyright 2019 被遺忘的樂園. All Rights Reserved.</p>
-		</div>
-    </footer>
 </body>
 </html>

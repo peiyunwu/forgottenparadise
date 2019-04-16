@@ -2,99 +2,105 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>遊戲理念</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>遊戲下載 - 被遺忘的樂園</title>
 	<!-- icon -->
-	<link rel="icon" href="images/logo.ico" type="image/x-icon" />
-  	<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+  	<link rel="shortcut icon" href="images/logo.ico">
 	<!-- css -->
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- js -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax/parallax.js"></script>
-    <script type="text/javascript" src="js/swiper/swiper.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
-
-	<div id="top"></div>
-
-	<header>
-		<a href="index.html">被遺忘的樂園</a>
-		<div class="menu"></div>
+	<header id="head">
+	    <nav id="main-navigation" class="navigation">
+	        <a href="index.html" class="logo">
+	            <img src="images/logotext.png" alt="">
+	        </a>
+	        <div class="hamburger-menu">
+	            <div class="hamburger"></div>
+	        </div>
+	        <div class="menu-container">
+	            <ul class="menu">
+	                <li class="menu-link"><a class="link" href="index.html">首頁</a></li>
+	                <li class="menu-link"><a class="link" href="issue.html">遊戲理念</a></li>
+	                <li class="menu-link"><a class="link" href="faq.html">海塑小知識</a></li>
+	                <li class="menu-link"><a class="link" href="download.html">遊戲下載</a></li>
+	                <!-- <li class="menu-link">
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reprehenderit, recusandae blanditiis dolores quis quisquam beatae necessitatibus facere, quae a.</p>
+	                </li> -->
+	                <li class="menu-link menu-line"></li>
+	                <li class="menu-link"><a class="link" href="about.html">關於我們</a></li>
+	            </ul>
+	            <!-- <div class="menu-info">
+	                <p>forgottenparadise@gmail.com</p>
+	            </div> -->
+	        </div>
+	    </nav>
 	</header>
-    
-    <nav>
-    	<div class="row">
-	    <div class="coll">
-		    <ul>
-		        <a href="index.html"><div class="home">被遺忘的樂園</div></a>
-		        <li><a href="index.html">遊戲介紹</a></li>
-		        <li><a href="issue.html">遊戲理念</a></li>
-		        <li><a href="about.html">關於我們</a></li>
-			       <li><a href="download.html" class="list">遊戲下載</a></li>
-		    </ul>
+		
+	<div class="bg">
+		<div class="conbg row">
+			<div class="col-6">
+				<h1 class="title">遊戲下載</h1>
+			</div>
+			<div class="col-6">
+				<img src="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=img+placeholder">
+			</div>
 		</div>
-		</div>
-    </nav>
-
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/download.jpg">
-    	<div class="row">
-    		<div class="col-12">
-	    		<h1>遊戲下載<br><small>＝往下滑動看更多＝</small></h1>
-	    	</div>
-	    </div>
 	</div>
 
-	<button onclick="topFunction()" id="topbut" title="Go to top">↑</button>
-	
+	<p class="scrolltext">SCROLL</p>
+	<span class="scroll"></span>
+
+	<!-- <div class="middle">
+	    <a href="#main">
+	    	<img src="images/arrow.png" alt="arrow" class="down">
+	    </a>
+	</div> -->
+
+	<main id="main">
+
 	<section>
 		<div class="row">
-		<div class="col-12 con1">
-			<div class="st"><span>規範</span></div>
-			<h3 class="sub">版權聲明</h3>
-			<p class="shorttext">本遊戲「被遺忘的樂園」是由XX遊戲團隊製作的冒險遊戲。</p>
-			<p class="shorttext">【1】作者並未放棄著作權。</p>
-
-			<p class="shorttext">【2】禁止遊戲內所有資料的改變、使用和（未經作者許可）擅自發布。特別是侵權下載網站、遊戲論壇等。</p>
-
-			<p class="shorttext">【3】遊戲內使用的素材（尤其是其中包含付費素材），特別是音樂、效果音和圖片，請不要擅自二次發布、轉載、改變或使用。</p>
-
-			<p class="shorttext">【4】在沒有原製作團隊的許可下，無論是什麼理由都禁止製作及販售任何有關「被遺忘的樂園」、用於商業盈利的著作物。</p>
-
-			<p class="shorttext">【5】「被遺忘的樂園」製作團隊擁有對本規約的最終解釋權，並且有權隨時對本規約內容進行修改。</p>
-
-			<p class="shorttext">請大家遵守禮貌來享受遊戲的樂趣，謝謝大家的支持！</p>
-		</div>
+			<div class="col-12">
+				<div class="subt centert"><b>版權聲明</b></div>
+				<div class="ranget">
+					<p class="para">本網站上刊載的所有內容，包括程式、文字敘述、圖片、教材….等，均受到中華民國著作權法及國際著作權法律的保障，著作權為原作者所有。</p>
+					<p class="para">本站所提供的內容與服務，僅供使用者個人之非商業用途的使用，使用人利用時必須遵守著作權法的所有相關規定，不可任意變更、發行、播送、轉賣、重製、改作、散布、表演、展示或利用本網站之內容或服務。</p>
+					<p class="para">如要求轉載本網站內容或其他商業性之利用，請向原作者提出申請，在未取得原著作人許可前嚴禁使用。</p>
+					<p class="para">如果您發現本網站的任何內容有誤或涉及侵權，請通過電子郵件或書面形式及時通知我們，我們將萬分感激並會及時予以改正。</p>
+					<div class="pos mb100">
+						<div class="square4 abs"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<div class="wave">
-		<div id="container">
-			<svg x="0px" y="0px" viewBox="0 0 3841 108.5" style="overflow:scroll;enable-background:new 0 0 3841 108.5;" xml:space="preserve">
-			<path style="fill:#EBF3FF; stroke-miterlimit:10;" d="M3360.5,97.739c-242,0-480-48.375-480-48.375S2647.5,0.5,2400.5,0.5s-480,48.375-480,48.375s-238,48.864-480,48.864s-480-48.375-480-48.375S727.5,0.5,480.5,0.5S0.5,48.875,0.5,48.875V108h1920h1920V48.875C3840.5,48.875,3602.5,97.739,3360.5,97.739z"/>
-			</svg>
-		</div>
-	</div>
-
-	<section class="purple">
-		<div class="row pb">
-		<div class="col-12 con1">
-			<div class="st"><span>提供</span></div>
-			<h3 class="sub">遊戲下載</h3>
-			<p>產生沒有意義的文字組合文字組合，<br>供排版時填充版面用，但不會因為字義而左右版型的判斷。<br>產生沒有意義的文字組合文字組合，供排版時填充版面用，<br>但不會因為字義而左右版型的判斷。產生沒有意義的文字組合文字組合，<br>供排版時填充版面用，但不會因為字義而左右版型的判斷。</p>
-			<!-- <a href="#"> -->
-				<div class="more active">暫未開放</div>
-			<!-- </a> -->
-		</div>
+	<section class="mt200">
+		<div class="con1 row">
+			<div class="col-8">
+				<img src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
+			</div>
+			<div class="col-4">
+				<div class="pos">
+					<div class="subt"><b>遊戲下載</b></div>
+					<p class="para">「被遺忘的樂園」2D橫向冒險遊戲預計於2019年4月完成，並將於5月初的發表會後公開，屆時玩家可從官網找到遊戲。下載前，別忘了閱讀版權聲明，了解相關規範，避免損害到自身的權益。</p>
+					<div class="notnow">
+						<a href="download.html">暫未開放</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-    <footer class="purple">
-    	<div class="row">
-		    <p>&copy; Copyright 2019 被遺忘的樂園. All Rights Reserved.</p>
-		</div>
-    </footer>
+	<footer>
+		<p>© Copyright 2019 被遺忘的樂園. All Rights Reserved.</p>
+	</footer>
+	
 </body>
 </html>

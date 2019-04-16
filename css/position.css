@@ -1,0 +1,148 @@
+/*position*/
+
+.pos{
+	position: relative;
+}
+
+.abs{
+	position: absolute;
+}
+
+/*margin*/
+
+.mt200{
+	margin-top: 200px;
+}
+
+.mt250{
+	margin-top: 250px;
+}
+
+.mt350{
+	margin-top: 350px;
+}
+
+.mt400{
+	margin-top: 400px;
+}
+
+.mb100{
+	margin-bottom: 100px;
+}
+
+.mb200{
+	margin-bottom: 200px;
+}
+
+/*------------ index ------------*/
+
+/*index story*/
+
+.square{
+	background-color: var(--color-bg-item1);
+	width: 24em;
+	height: 36em;
+	top: 0;
+	left: -25%;
+	z-index: -10;
+}
+
+/*index download*/
+
+.square2{
+	background-color: var(--color-bg-item1);
+	width: 18em;
+	height: 18em;
+	top: 8em;
+	left: -30%;
+	z-index: -10;
+}
+
+/*index about*/
+
+.square3{
+	background-color: var(--color-bg-item1);
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px 140px 40px;
+	display: inline-block;
+}
+
+.click{
+	bottom: -65px;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
+
+/*------------ issue ------------*/
+
+/*issue why*/
+
+.imgpad{
+	padding: 0 100px;
+}
+
+.square4{
+	background-color: var(--color-bg-item1);
+	width: 45em;
+	height: 13em;
+	bottom: -9em;
+	left: -50%;
+	z-index: -10;
+}
+
+/*issue issues*/
+
+.square5{
+	background-color: var(--color-bg-item1);
+	width: 15em;
+	height: 20em;
+	top: 6em;
+	left: -40%;
+	z-index: -10;
+}
+
+/*issue 02*/
+
+.square6{
+	width: 55%;
+	margin: 0 auto;
+	background-color: var(--color-bg-item1);
+	padding: 20px 60px;
+}
+
+/*issue 05*/
+
+.square7{
+	width: 70%;
+	margin: 0 auto;
+	background-color: var(--color-bg-item1);
+	padding: 20px 60px;
+	bottom: -5em;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+/*------------ faq ------------*/
+
+/*faq start*/
+
+.square8{
+	width: 70%;
+	margin: 0 auto;
+	background-color: var(--color-bg-item1);
+	padding: 20px 60px;
+}
+
+/*Q1*/
+
+.square9{
+	background-color: var(--color-bg-item1);
+	width: 15em;
+	height: 15em;
+	top: 12em;
+	left: -40%;
+	z-index: -10;
+}
