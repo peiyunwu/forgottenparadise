@@ -4,6 +4,7 @@
 @import url("menu.css");
 @import url("position.css");
 @import url("tab.css");
+@import url("parallax.css");
 
 /*font*/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700');
@@ -22,7 +23,6 @@ html {
 }
 
 html, body{
-	height: 100%;
 	font-family: 'Noto Sans TC', serif;
 
 	--color-text: #000;
@@ -57,13 +57,13 @@ html, body{
 
 /*background image*/
 
-.bgimg{
+/*.bgimg{
 	background-image: url(../images/bg.jpg);
 	height: 100%; 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+}*/
 
 .bg{
 	height: 100%;
