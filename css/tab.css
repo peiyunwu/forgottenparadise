@@ -54,7 +54,7 @@ label {
   color: var(--color-text);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   label{height: 7em;}
   #tab1:checked ~ #content1 .col-6,
   #tab2:checked ~ #content2 .col-6,

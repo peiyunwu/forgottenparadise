@@ -144,7 +144,7 @@ p{
 	color: #ed7a1c;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.ranget{
 		padding:0 16px;
 		width: 100%;
@@ -173,7 +173,7 @@ a {
 	color: #fff;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.more a, .notnow a{
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 	}
@@ -256,7 +256,7 @@ a {
 	background: #AAA;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	.scroll{left: 20px;}
 	.scrolltext{left: -15px;}
 }
