@@ -241,8 +241,9 @@ body.menu-open {
   outline: 0;
 }
 
-.navigation .menu-container .menu li a:hover {
-  color: #666;
+.navigation .menu-container .menu li a:hover{
+  /*color: #b2d6f0;*/
+  text-shadow: 0 0 0.2em rgba(255, 255, 255, .2), 0 0 0.2em rgba(255, 255, 255, .8);
 }
 
 @media (min-width: 1190px) {

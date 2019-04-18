@@ -141,10 +141,10 @@
 
 .square5{
 	background-color: var(--color-bg-item1);
-	width: 15em;
-	height: 20em;
-	top: 6em;
-	left: -40%;
+	width: 12em;
+	height: 13em;
+	bottom: 5em;
+	left: -30%;
 	z-index: -10;
 }
 
