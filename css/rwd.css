@@ -1,11 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*only this web*/
-img{
-	width: 100%;
-}
-
 /*===============rwd details===============*/
 
 *{
@@ -62,4 +57,11 @@ img{
 	/*.row img{
 		width: auto;
 	}*/
+}
+
+
+/*only this web*/
+img{
+	width: 100%;
+	box-sizing: border-box;
 }

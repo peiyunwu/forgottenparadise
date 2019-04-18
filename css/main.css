@@ -1,13 +1,13 @@
 /*css document*/
 @import url("reset.css");
 @import url("rwd.css");
-@import url("menu.css");
+@import url("nav.css");
 @import url("position.css");
 @import url("tab.css");
 @import url("parallax.css");
 
 /*font*/
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 
 *,
@@ -57,14 +57,6 @@ html, body{
 
 /*background image*/
 
-/*.bgimg{
-	background-image: url(../images/bg.jpg);
-	height: 100%; 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
-
 .bg{
 	height: 100%;
 	background-color: #EEE;
@@ -73,26 +65,38 @@ html, body{
 /*container*/
 
 section {
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 10%;
 	margin-bottom: 10%;
+	overflow: hidden;
 }
 
-.conbg{
-	padding: 18vh 0;
-	width: 65%;
-	margin: 0 auto;
+ .con0, .con1, .con2{
+	margin:0 16px;
 }
 
-.con1 {
-	margin: 0 100px;
-	display: block;
-}
-
-.con2 {
-	margin: 0 150px;
-	display: block;
+@media only screen and (min-width: 1200px){
+	section {
+		width: 85%;
+		overflow: none;
+	}
+	.con0{
+		margin: 0;
+	}
+	.con1 {
+		margin: 0 100px;
+		display: block;
+	}
+	.con2 {
+		margin: 0 150px;
+		display: block;
+	}
+	.conbg{
+		padding: 18vh 0;
+		width: 65%;
+		margin: 0 auto;
+	}
 }
 
 /*text*/
@@ -102,15 +106,6 @@ p{
 	line-height: 1.5em;
 	font-size: 16px;
 	margin: 16px 0;
-}
-
-.title{
-	font-weight: bold;
-	font-size: 4rem;
-	letter-spacing: 0.5em;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .subt{
@@ -145,6 +140,17 @@ p{
 	text-decoration:line-through;
 }
 
+.warn{
+	color: #ed7a1c;
+}
+
+@media only screen and (max-width: 768px) {
+	.ranget{
+		padding:0 16px;
+		width: 100%;
+	}
+}
+
 /*link*/
 
 a {
@@ -165,6 +171,12 @@ a {
 .notnow a{
 	background-color: #AAA;
 	color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+	.more a, .notnow a{
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
 }
 
 /*arrow*/
@@ -244,6 +256,11 @@ a {
 	background: #AAA;
 }
 
+@media only screen and (max-width: 768px){
+	.scroll{left: 20px;}
+	.scrolltext{left: -15px;}
+}
+
 @-webkit-keyframes scroll {
 	0% {
 	-webkit-transform:translate3d(0, -100%, 0)
@@ -294,6 +311,10 @@ b::before {
 }
 
 /*footer*/
+
+footer{
+	margin-top: 100px;
+}
 
 footer p{
 	text-align: center;

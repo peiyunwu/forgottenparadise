@@ -10,28 +10,54 @@
 
 /*margin*/
 
-.mt200{
-	margin-top: 200px;
+.mt200, .mt250, .mt350, .mt400{
+	margin-top: 0;
 }
 
-.mt250{
-	margin-top: 250px;
-}
-
-.mt350{
-	margin-top: 350px;
-}
-
-.mt400{
-	margin-top: 400px;
+@media only screen and (min-width: 1200px){
+	.mt200{margin-top: 200px;}
+	.mt250{margin-top: 250px;}
+	.mt350{margin-top: 350px;}
+	.mt400{margin-top: 400px;}
 }
 
 .mb100{
-	margin-bottom: 100px;
+	margin-bottom: 0;
 }
 
 .mb200{
-	margin-bottom: 200px;
+	margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1200px){
+	.mb100{margin-bottom: 100px;}
+	.mb200{margin-bottom: 200px;}
+}
+
+/*------------ others ------------*/
+
+.square10{
+	background-color: var(--color-bg-item1);
+	width: 20em;
+	height: 9em;
+	bottom: -3em;
+	left: -30%;
+	z-index: -10;
+}
+
+.square11{
+	background-color: var(--color-bg-item1);
+	width: 7em;
+	height: 18em;
+	bottom: -3em;
+	right: -13%;
+	z-index: -10;
+}
+
+@media only screen and (max-width: 768px){
+	.square11{
+		height: 7em;
+	}
 }
 
 /*------------ index ------------*/
@@ -68,11 +94,30 @@
 	display: inline-block;
 }
 
+.square3 p br{display: none;}
+
+@media only screen and (min-width: 768px){
+	.square3 p br{display: block !important;}
+}
+
 .click{
 	bottom: -65px;
 	left: 50%;
 	transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px){
+	.square{
+		width: 140%;
+		height: 12em;
+		top: 50%;
+		left: -20%;
+		margin: 0;
+	}
+	.square3{
+		padding: 20px 40px 40px;
+	}
 }
 
 /*------------ issue ------------*/
@@ -125,6 +170,21 @@
 
 }
 
+@media only screen and (max-width: 768px){
+	.square4{
+		height: 25em;
+	}
+	.square6, .square7{
+		width: 100%;
+		padding: 20px 40px;
+	}
+	.square7{
+		position: relative;
+		margin: 0;
+		top: -15px;
+	}
+}
+
 /*------------ faq ------------*/
 
 /*faq start*/
@@ -145,4 +205,11 @@
 	top: 12em;
 	left: -40%;
 	z-index: -10;
+}
+
+@media only screen and (max-width: 768px){
+	.square8{
+		width: 100%;
+		padding: 20px 40px;
+	}
 }

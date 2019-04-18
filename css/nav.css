@@ -92,6 +92,14 @@ body.menu-open {
           transform: rotate(-45deg);
 }
 
+@media only screen and (max-width: 768px){
+  .navigation .logo {top: 25px;}
+  .navigation .hamburger-menu {
+    right: 15px;
+    top: 28px;
+  }
+}
+
 /*overlay*/
 
 .navigation .menu-container {
