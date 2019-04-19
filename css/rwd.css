@@ -61,10 +61,14 @@
 	/*.row img{
 		width: auto;
 	}*/
+	.floatr{
+		float: right;
+	}
 }
 
 
 /*only this web*/
+
 img{
 	width: 100%;
 	box-sizing: border-box;
