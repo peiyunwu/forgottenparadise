@@ -36,6 +36,8 @@
 	.col-m-10 {width: 83.33%;}
 	.col-m-11 {width: 91.66%;}
 	.col-m-12 {width: 100%;}
+
+	[class*="col-"]{padding: 20px;}
 }
 
 /* For desktop */
@@ -53,6 +55,8 @@
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+
+	[class*="col-"]{padding: 30px;}
 
 	/*.row img{
 		width: auto;

@@ -100,6 +100,14 @@ body.menu-open {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+  .navigation .logo {top: 30px;}
+  .navigation .hamburger-menu {
+    right: 24px;
+    top: 28px;
+  }
+}
+
 /*overlay*/
 
 .navigation .menu-container {

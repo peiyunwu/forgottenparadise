@@ -29,6 +29,7 @@ html, body{
 	--color-link: #000;
 	/*--color-link-hover: #f20c40;*/
 	--color-bg-item1: #EEE;
+	--color-bg-item2: rgba(238, 238, 238, .4);
 	--color-highlight: #b2d6f0;
 
 	/*
@@ -72,14 +73,20 @@ section {
 	overflow: hidden;
 }
 
- .con0, .con1, .con2{
+.con0, .con1, .con2, .con3{
 	margin:0 16px;
+}
+
+@media only screen and (min-width: 768px){
+	section{
+		width: 90%;
+	}
 }
 
 @media only screen and (min-width: 1200px){
 	section {
 		width: 85%;
-		overflow: none;
+		overflow: visible;
 	}
 	.con0{
 		margin: 0;
@@ -89,6 +96,10 @@ section {
 		display: block;
 	}
 	.con2 {
+		margin: 0 15vw;
+		display: block;
+	}
+	.con3 {
 		margin: 0 150px;
 		display: block;
 	}
@@ -125,8 +136,8 @@ p{
 }
 
 .ranget{
-	width: 50%;
-	margin: 0 auto;
+	padding:0 16px;
+	width: 100%;
 }
 
 .number{
@@ -144,10 +155,16 @@ p{
 	color: #61A9DF;
 }
 
-@media only screen and (max-width: 767px) {
+.delbr br{display: none;}
+
+@media only screen and (min-width: 768px){
+	.delbr br{display: block !important;}
+}
+
+@media only screen and (min-width: 1200px) {
 	.ranget{
-		padding:0 16px;
-		width: 100%;
+		width: 50%;
+		margin: 0 auto;
 	}
 }
 
@@ -253,6 +270,11 @@ a {
 @media only screen and (max-width: 767px){
 	.scroll{left: 20px;}
 	.scrolltext{left: -15px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+	.scroll{left: 35px;}
+	.scrolltext{left: -2px;}
 }
 
 @-webkit-keyframes scroll {

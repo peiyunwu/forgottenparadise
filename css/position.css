@@ -14,10 +14,17 @@
 	margin-top: 0;
 }
 
+@media only screen and (min-width: 768px){
+	.mt200{margin-top: 100px;}
+	.mt250{margin-top: 250px;}
+	.mt350{margin-top: 350px;}
+	.mt400{margin-top: 400px;}
+}
+
 @media only screen and (min-width: 1200px){
 	.mt200{margin-top: 200px;}
 	.mt250{margin-top: 250px;}
-	.mt350{margin-top: 350px;}
+	.mt350{margin-top: 35vh;}
 	.mt400{margin-top: 400px;}
 }
 
@@ -37,7 +44,7 @@
 /*------------ others ------------*/
 
 .square10{
-	background-color: var(--color-bg-item1);
+	background-color: var(--color-bg-item2);
 	width: 20em;
 	height: 9em;
 	bottom: -3em;
@@ -46,17 +53,17 @@
 }
 
 .square11{
-	background-color: var(--color-bg-item1);
+	background-color: var(--color-bg-item2);
 	width: 7em;
-	height: 18em;
+	height: 7em;
 	bottom: -3em;
 	right: -13%;
 	z-index: -10;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 1200px){
 	.square11{
-		height: 7em;
+		height: 18em;
 	}
 }
 
@@ -66,10 +73,11 @@
 
 .square{
 	background-color: var(--color-bg-item1);
-	width: 24em;
-	height: 36em;
-	top: 0;
-	left: -25%;
+	width: 140%;
+	height: 12em;
+	top: 50%;
+	left: -20%;
+	margin: 0;
 	z-index: -10;
 }
 
@@ -77,10 +85,10 @@
 
 .square2{
 	background-color: var(--color-bg-item1);
-	width: 18em;
-	height: 18em;
+	width: 16em;
+	height: 95%;
 	top: 8em;
-	left: -30%;
+	left: -25%;
 	z-index: -10;
 }
 
@@ -90,14 +98,8 @@
 	background-color: var(--color-bg-item1);
 	box-sizing: border-box;
 	margin: 0 auto;
-	padding: 20px 140px 40px;
+	padding: 20px 40px 40px;
 	display: inline-block;
-}
-
-.delbr br{display: none;}
-
-@media only screen and (min-width: 768px){
-	.delbr br{display: block !important;}
 }
 
 .click{
@@ -107,16 +109,15 @@
 	-ms-transform: translateX(-50%);
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 1200px){
 	.square{
-		width: 140%;
-		height: 12em;
-		top: 50%;
-		left: -20%;
-		margin: 0;
+		width: 45%;
+		height: 115%;
+		top: 0;
+		left: -25%;
 	}
 	.square3{
-		padding: 20px 40px 40px;
+		padding: 20px 140px 40px;
 	}
 }
 
@@ -141,10 +142,10 @@
 
 .square5{
 	background-color: var(--color-bg-item1);
-	width: 12em;
-	height: 13em;
-	bottom: 5em;
-	left: -30%;
+	width: 70%;
+	height: 30vh;
+	top: 80%;
+	left: -50%;
 	z-index: -10;
 }
 
@@ -194,17 +195,6 @@
 	margin: 0 auto;
 	background-color: var(--color-bg-item1);
 	padding: 20px 60px;
-}
-
-/*Q1*/
-
-.square9{
-	background-color: var(--color-bg-item1);
-	width: 15em;
-	height: 15em;
-	top: 12em;
-	left: -40%;
-	z-index: -10;
 }
 
 @media only screen and (max-width: 767px){
