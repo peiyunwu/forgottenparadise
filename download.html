@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/nav.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
 </head>
 <body>
 	<header id="head">
@@ -72,7 +73,7 @@
 
 	<main id="main">
 
-	<section>
+	<section data-aos="fade-up">
 		<div class="row">
 			<div class="col-12 col-m-12">
 				<div class="subt centert"><b>版權聲明</b></div>
@@ -89,7 +90,7 @@
 		</div>
 	</section>
 
-	<section class="mt200">
+	<section class="mt200" data-aos="fade-up">
 		<div class="con1 row">
 			<div class="col-8 col-m-8">
 				<img src="https://api.fnkr.net/testimg/300x200/00CED1/FFF/?text=img+placeholder">
@@ -109,6 +110,12 @@
 	<footer>
 		<p>© Copyright 2019 被遺忘的樂園. All Rights Reserved.</p>
 	</footer>
+	
+	<script>
+		AOS.init({
+			duration: 1200,
+		});
+	</script>
 	
 </body>
 </html>

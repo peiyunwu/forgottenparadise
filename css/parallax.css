@@ -1,3 +1,5 @@
+/*------------ parallax ------------*/
+
 .over{
 	width: 100%;
 	height: 100vh;
@@ -90,5 +92,236 @@
 @media only screen and (min-width: 1200px){
 	.bgimg2{
 		min-height: 100vh;
+	}
+}
+
+/*------------ position ------------*/
+
+.pos{
+	position: relative;
+}
+
+.abs{
+	position: absolute;
+}
+
+/*margin*/
+
+.mt200, .mt250, .mt350{
+	margin-top: 0;
+}
+
+@media only screen and (min-width: 1200px){
+	.mt200{margin-top: 200px;}
+	.mt250{margin-top: 250px;}
+	.mt350{margin-top: 35vh;}
+}
+
+.mb100{
+	margin-bottom: 0;
+}
+
+.mb200, .mb150{
+	margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1200px){
+	.mb100, .mb150{margin-bottom: 100px;}
+	.mb200{margin-bottom: 200px;}
+}
+
+/*------------ others ------------*/
+
+.square10{
+	background-color: var(--color-bg-item2);
+	width: 20em;
+	height: 9em;
+	bottom: -3em;
+	left: -30%;
+	z-index: -10;
+}
+
+.square11{
+	background-color: var(--color-bg-item2);
+	width: 7em;
+	height: 7em;
+	bottom: -3em;
+	right: -13%;
+	z-index: -10;
+}
+
+@media only screen and (min-width: 1200px){
+	.square11{
+		height: 18em;
+	}
+}
+
+/*------------ index ------------*/
+
+/*index story*/
+
+.square{
+	background-color: var(--color-bg-item1);
+	width: 140%;
+	height: 12em;
+	top: 50%;
+	left: -20%;
+	margin: 0;
+	z-index: -10;
+}
+
+/*index download*/
+
+.square2{
+	background-color: var(--color-bg-item1);
+	width: 16em;
+	height: 95%;
+	top: 8em;
+	left: -25%;
+	z-index: -10;
+}
+
+/*index about*/
+
+.square3{
+	background-color: var(--color-bg-item1);
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px 40px 40px;
+	display: inline-block;
+}
+
+.click{
+	bottom: -65px;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 768px){
+	.square{
+		width: 140%;
+		height: 12em;
+		top: 50%;
+		left: -20%;
+		margin: 0;
+	}
+	.square2{
+		width: 70%;
+		height: 80%;
+		top: 9em;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.square{
+		width: 45%;
+		height: 115%;
+		top: 0;
+		left: -25%;
+	}
+	.square2{
+		left: -15%;
+		width: 65%;
+	}
+	.square3{
+		padding: 20px 140px 40px;
+	}
+}
+
+/*------------ issue ------------*/
+
+/*issue why*/
+
+.imgpad{
+	padding: 0 100px;
+}
+
+.square4{
+	background-color: var(--color-bg-item1);
+	width: 45em;
+	height: 25em;
+	bottom: -9em;
+	left: -50%;
+	z-index: -10;
+}
+
+/*issue issues*/
+
+.square5{
+	background-color: var(--color-bg-item1);
+	width: 100%;
+	height: 30vh;
+	top: 65%;
+	left: -50%;
+	z-index: -10;
+}
+
+/*issue 02*/
+
+.square6{
+	margin: 0 auto;
+	background-color: var(--color-bg-item1);
+}
+
+.square6, .square7{
+	width: 100%;
+	padding: 20px 40px;
+}
+
+/*issue 05*/
+
+.square7{
+	background-color: var(--color-bg-item1);
+	position: relative;
+	top: -15px;
+}
+
+@media only screen and (min-width: 768px){
+	.square4{
+		height: 30vh;
+	}
+	.square5{
+		top: 60%;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.square4{
+		height: 13em;
+	}
+	.square5{
+		width: 70%;
+		height: 90%;
+	}
+	.square6{
+		width: 55%;
+		padding: 20px 60px;
+	}
+	.square7{
+		width: 70%;
+		margin: 0 auto;
+		padding: 20px 60px;
+		top: -4em;
+	}
+}
+
+/*------------ faq ------------*/
+
+/*faq start*/
+
+.square8{
+	width: 100%;
+	padding: 20px 40px;
+	margin: 0 auto;
+	background-color: var(--color-bg-item1);
+	
+}
+
+@media only screen and (min-width: 1200px){
+	.square8{
+		width: 70%;
+		padding: 20px 60px;
 	}
 }

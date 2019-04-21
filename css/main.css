@@ -2,9 +2,9 @@
 @import url("reset.css");
 @import url("rwd.css");
 @import url("nav.css");
-@import url("position.css");
-@import url("tab.css");
 @import url("parallax.css");
+@import url("tab.css");
+@import url("aos.css");
 
 /*font*/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700');

@@ -38,7 +38,7 @@ body.menu-open {
   z-index: 999;
   opacity: 1;
 
-  transition: .5s;
+  transition: .5s ease;
   border-radius: 100%;
 }
 
