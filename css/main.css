@@ -27,7 +27,7 @@ html, body{
 
 	--color-text: #000;
 	--color-link: #000;
-	/*--color-link-hover: #f20c40;*/
+	--color-link-hover: #b2d6f0;
 	--color-bg-item1: #EEE;
 	--color-bg-item2: rgba(238, 238, 238, .4);
 	--color-highlight: #b2d6f0;
@@ -114,7 +114,7 @@ section {
 
 p{
 	display: block;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	font-size: 16px;
 	margin: 16px 0;
 }
@@ -171,6 +171,20 @@ p{
 	}
 }
 
+/*list*/
+
+@media only screen and (max-width: 767px) {
+	.list{
+		float: none;
+	}
+	.pt{
+		padding-top: 0;
+	}
+	.pb{
+		padding-bottom: 0;
+	}
+}
+
 /*link*/
 
 a {
@@ -193,6 +207,16 @@ a {
 .notnow a{
 	background-color: #AAA;
 	color: #fff;
+}
+
+.inpara{
+	color: var(--color-link);
+	border-bottom: 1.5px solid #61A9DF;
+	transition: .5s ease;
+}
+
+.inpara:hover{
+	color: #61A9DF;
 }
 
 /*arrow*/

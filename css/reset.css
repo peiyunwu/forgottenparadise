@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -129,17 +129,10 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
-    outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
+a:focus,
 a:active,
 a:hover {
-    outline: 0;
+    outline: none;
 }
 
 /**
