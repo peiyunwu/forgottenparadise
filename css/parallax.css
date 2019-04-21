@@ -8,6 +8,7 @@
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
+/*	background-color: #EDEDED;*/
 }
 
 /*index*/
@@ -46,7 +47,7 @@
 	font-size: 3.5rem;
 	letter-spacing: .2em;
 	color: #fff;
-	text-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+	text-shadow: 2px 4px 8px rgba(0,0,0,0.2);
 	top: 49%;
 }
 
@@ -57,6 +58,8 @@
 .frontbg2{
 	border: 1px solid #EEE;
 	box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  	-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 
 @media only screen and (max-width: 767px){
