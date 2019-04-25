@@ -195,7 +195,7 @@ a {
 	margin: 60px 0;
 }
 
-.more a, .notnow a{
+.more a, .notnow span{
 	color: var(--color-link);
 	padding: 8px 25px;
 	background-color: #fff;
@@ -204,7 +204,7 @@ a {
   	-moz-box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 
-.notnow a{
+.notnow span{
 	background-color: #AAA;
 	color: #fff;
 }
