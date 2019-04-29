@@ -1,5 +1,5 @@
 body.menu-open {
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .navigation .logo {
@@ -12,13 +12,6 @@ body.menu-open {
   transform: translateX(-50%);
   -ms-transform: translateX(-50%);
 }
-
-/*.navigation .logo .logo-text {
-  display: inline-block;
-  font-size: 1.2em;
-  background-size: cover;
-  color: #fff;
-}*/
 
 .navigation .logo img {
   width: 150px;
@@ -254,17 +247,10 @@ body.menu-open {
 }
 
 .navigation .menu-container .menu li a {
-  display: block;
   color: #fff;
   font-size: 1.5rem;
   transition: color .3s;
-  padding: 16px 0;
   outline: 0;
-}
-
-.navigation .menu-container .menu li a:hover{
-  /*color: #b2d6f0;*/
-  text-shadow: 0 0 0.2em rgba(255, 255, 255, .2), 0 0 0.2em rgba(255, 255, 255, .8);
 }
 
 @media (min-width: 1190px) {
@@ -273,57 +259,40 @@ body.menu-open {
   }
 }
 
-/*.navigation .menu-container .menu li p {
-  color: #fff;
-  font-size: 1rem;
-  margin-bottom: 0;
+/*animate*/
+
+nav li{
+  display: block;
+  margin: 30px 0;
 }
 
-@media (min-width: 930px) {
-  .navigation .menu-container .menu li p {
-    font-size: 1.2rem;
-  }
+nav li a{
+  position: relative;
 }
 
-@media (min-width: 1190px) {
-  .navigation .menu-container .menu li p {
-    font-size: 1.5rem;
-  }
-}*/
+.navigation .menu-container .menu li a.active{
+  color: #666;
+}
 
-/*.navigation .menu-container .menu-info {
-  text-align: center;
+.navigation .menu-container .menu li a.active::before{
+  width: 0%;
+  color: #666;
+}
+
+nav li a::before{
+  content: "";
   position: absolute;
-  width: 100%;
-  bottom: 16px;
-  line-height: 1.6em;
-  left: 0;
-  color: #fff;
-  z-index: 1;
-  padding: 0 16px;
-  -webkit-transform: translate(0, calc(100% + 16px));
-          transform: translate(0, calc(100% + 16px));
-  transition: .3s 1s;
+  background-color: rgba(97, 169, 223, .8);
+  height: 40%;
+  z-index: -1;
+  bottom: 10px;
+  left: -12px;
+  transform: rotate(-2deg);
+  width: 0%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.navigation .menu-container .menu-info p {
-  font-size: 1rem;
-  margin-bottom: 0;
+nav li a:hover::before{
+  width: calc(100% + 20px);
 }
-
-@media (min-width: 930px) {
-  .navigation .menu-container .menu-info p {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 1190px) {
-  .navigation .menu-container .menu-info p {
-    font-size: 1.7rem;
-  }
-}
-
-.menu-open .navigation .menu-container .menu-info {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}*/
